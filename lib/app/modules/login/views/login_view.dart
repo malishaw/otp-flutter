@@ -27,7 +27,7 @@ class LoginView extends GetView<LoginController> {
                   child: Padding(
                     padding: const EdgeInsets.all(12.0),
                     child: Image.asset(
-                      "assets/google.png",
+                      "assets/logo.jpg",
                       height: 200,
                     ),
                   ),
