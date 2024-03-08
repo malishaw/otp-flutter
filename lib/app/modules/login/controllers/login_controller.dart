@@ -5,7 +5,7 @@ import 'package:get_test_app/app/services/auth_services.dart';
 
 class LoginController extends GetxController {
   //TODO: Implement LoginController
-
+  var selectedCountryCode = '+94'.obs; // Default country code
   var phoneController = TextEditingController();
   var key = GlobalKey<FormState>();
   var isLoading = false.obs;
@@ -34,5 +34,8 @@ class LoginController extends GetxController {
             Get.toNamed(Routes.OTP);
           });
     }
+  }
+  void updateCountryCode(String newCountryCode) {
+    selectedCountryCode.value = newCountryCode;
   }
 }
